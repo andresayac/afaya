@@ -1,0 +1,143 @@
+.hero {
+	display: flex;
+	justify-content: space-between;
+	height: 100vh;
+	position: relative;
+	max-width: none;
+	background: blue;
+
+	.navigation {
+		display: flex;
+		justify-content: space-evenly;
+		max-width: 800px;
+		width: 100%;
+		text-align: center;
+		place-self: center;
+		margin-top: 2rem;
+
+		a {
+			font-size: 1.5rem;
+			font-weight: 600;
+			color: var(--text-secondary);
+		}
+
+		a:hover {
+			color: var(--text);
+		}
+	}
+
+	.grid {
+		display: flex;
+		justify-content: center;
+		grid-gap: 5%;
+		padding: 0 max(5%, 6rem);
+
+		.title {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+
+			h1 {
+				font-size: 4.5rem;
+				font-weight: 900;
+			}
+
+			h2 {
+				font-size: 3.5rem;
+				font-weight: 600;
+				background-clip: text;
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+
+			.subtitle {
+				height: 4.25rem;
+				overflow: hidden;
+				margin-top: -0rem;
+
+				.wrapper {
+					animation: subtitle 7s ease infinite;
+
+					@media (prefers-reduced-motion) {
+						animation: none;
+					}
+				}
+
+				@keyframes subtitle {
+					0%,
+					17% {
+						transform: translateY(0%);
+					}
+					33%,
+					50% {
+						transform: translateY(-25%);
+					}
+					66%,
+					83% {
+						transform: translateY(-50%);
+					}
+					100% {
+						transform: translateY(-75%);
+					}
+				}
+			}
+		}
+
+		.avatar {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			img {
+				border-radius: 50%;
+				max-width: 250px;
+				width: 100%;
+				height: auto;
+				box-shadow: 00px 0px 30px #0000004f;
+			}
+		}
+	}
+
+	@media screen and (max-width: 800px) {
+		justify-content: space-around;
+
+		.links {
+			flex-direction: row;
+			justify-content: center;
+			position: static;
+		}
+
+		.navigation {
+			position: static;
+		}
+
+		.grid {
+			flex-direction: column;
+			grid-gap: 3rem;
+			padding: 0 5%;
+			position: relative;
+			top: -5%;
+
+			.avatar {
+				padding: 0 3rem;
+			}
+
+			.title {
+				h1 {
+					font-size: 3.5rem;
+				}
+
+				.subtitle {
+					height: 35px;
+					margin-top: 0.5rem;
+
+					h2 {
+						font-size: 1.8rem;
+					}
+				}
+			}
+		}
+	}
+}
