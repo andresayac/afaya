@@ -5,7 +5,7 @@ import { Projects } from "../components/projects";
 import { Contact } from "../components/contact";
 
 import GitHub from "../public/github.svg";
-import Twitter from "../public/twitter.svg";
+import TwitterX from "../public/x.svg";
 import LinkedIn from "../public/linkedin.svg";
 
 export const config = {
@@ -27,8 +27,8 @@ export default function Home() {
 					<a className="linkedin" href="https://www.linkedin.com/in/andres-aya/" target="_blank" rel="noreferrer">
 						<LinkedIn />
 					</a>
-					<a className="twitter" href="https://twitter.com/andresayaa" target="_blank" rel="noreferrer">
-						<Twitter />
+					<a className="twitterX" href="https://twitter.com/andresayaa" target="_blank" rel="noreferrer">
+						<TwitterX />
 					</a>
 				</div>
 				<div className="content">
