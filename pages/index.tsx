@@ -5,9 +5,8 @@ import { Projects } from "../components/projects";
 import { Contact } from "../components/contact";
 import { Skills } from "../components/skills";
 
-import GitHub from "../public/github.svg";
-import TwitterX from "../public/x.svg";
-import LinkedIn from "../public/linkedin.svg";
+import { GitHub, LinkedIn, TwitterX } from "../components/images";
+
 
 export const config = {
 	unstable_runtimeJS: false,
@@ -22,16 +21,17 @@ export default function Home() {
 			</Head>
 			<div className="main">
 				<div className="links">
-					<a href="https://github.com/andresayac/" target="_blank" rel="noreferrer">
+					<a href="https://github.com/andresayac/" target="_blank" rel="noreferrer" aria-label="GitHub">
 						<GitHub />
 					</a>
-					<a className="linkedin" href="https://www.linkedin.com/in/andres-aya/" target="_blank" rel="noreferrer">
+					<a className="linkedin" href="https://www.linkedin.com/in/andres-aya/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
 						<LinkedIn />
 					</a>
-					<a className="twitterX" href="https://twitter.com/andresayaa" target="_blank" rel="noreferrer">
+					<a className="twitterX" href="https://twitter.com/andresayaa" target="_blank" rel="noreferrer" aria-label="Twitter">
 						<TwitterX />
 					</a>
 				</div>
+
 				<div className="content">
 					<Hero />
 					<Projects />

@@ -92,7 +92,7 @@
 		"Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
 	--text: #000;
-	--text-secondary: #2a2a2a;
+	--text-secondary: #000;
 	--background: #fff;
 	--background-rgb: 255, 255, 255;
 	--container: 1100px;
@@ -102,7 +102,7 @@
 @media (prefers-color-scheme: dark) {
 	:root {
 		--text: #fff;
-		--text-secondary: #e2e2e2;
+		--text-secondary: #fff;
 		--background: #000;
 		--background-rgb: 13, 13, 13;
 		--background-secondary: #1a1a1a;
@@ -183,6 +183,7 @@ a {
 	font-family: "Inter";
 	font-style: normal;
 	font-weight: 400;
+	font-display: swap;
 	src: url("/fonts/inter-v12-latin-regular.eot"); /* IE9 Compat Modes */
 	src: local(""), url("/fonts/inter-v12-latin-regular.eot?#iefix") format("embedded-opentype"),
 		/* IE6-IE8 */ url("/fonts/inter-v12-latin-regular.woff2") format("woff2"),
@@ -195,6 +196,7 @@ a {
 	font-family: "Inter";
 	font-style: normal;
 	font-weight: 600;
+	font-display: swap;
 	src: url("/fonts/inter-v12-latin-600.eot"); /* IE9 Compat Modes */
 	src: local(""), url("/fonts/inter-v12-latin-600.eot?#iefix") format("embedded-opentype"),
 		/* IE6-IE8 */ url("/fonts/inter-v12-latin-600.woff2") format("woff2"),
@@ -207,6 +209,7 @@ a {
 	font-family: "Inter";
 	font-style: normal;
 	font-weight: 900;
+	font-display: swap;
 	src: url("/fonts/inter-v12-latin-900.eot"); /* IE9 Compat Modes */
 	src: local(""), url("/fonts/inter-v12-latin-900.eot?#iefix") format("embedded-opentype"),
 		/* IE6-IE8 */ url("/fonts/inter-v12-latin-900.woff2") format("woff2"),

@@ -17,7 +17,7 @@ export function About() {
 					fontSize: "4rem",
 				}}
 			>
-				Un poco sobre mi
+				Un poco sobre mí
 			</h2>
 			<Timeline>
 				<TimelineItem date="Junio 2013" title="Aprendiendo programación">
