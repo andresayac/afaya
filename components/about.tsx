@@ -86,7 +86,15 @@ export function About() {
 						Además, he desarrollado chatbots orientados a juegos, ofreciendo experiencias interactivas como jugar al tres en línea (Tricki), el ahorcado, y Akinator.
 					</div>
 				</TimelineItem>
+
+				<TimelineItem date="Diciembre 2023 - Abril 2024" title="IA">
+					<div>
+						Investigación en IA, aprendiendo sobre redes neuronales, aprendizaje profundo, aprendizaje por refuerzo, procesamiento de lenguaje natural, visión por computadora y más.<br /><br />
+						Desarrollé un chatbot con acceso en WhatsApp integrado con Copilot para reconocimiento, generador de texto e imágenes, reconocimiento de voz e imágenes, y más. <Link href="https://github.com/andresayac/bot-wa-bing-ai/">ChatBot</Link>
+					</div>
+				</TimelineItem>
 			</Timeline>
+			
 		</div>
 	);
 }

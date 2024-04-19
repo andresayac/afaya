@@ -36,7 +36,7 @@ export function Projects() {
 				<Card href="https://github.com/andresayac/bot-wa-games">
 					<Image style={{ aspectRatio: "2 / 1" }} src={ChatBotGames} alt="ChatbotGames" />
 				</Card>
-				<Card href=" https://github.com/andresayac/bot-chatgpt">
+				<Card href=" https://github.com/andresayac/bot-wa-bing-ai">
 					<Image style={{ aspectRatio: "2 / 1" }} src={ChatGPTBotWhatsapp} alt="ChatbotGPT" />
 				</Card>
 				<Card href="https://notiauto.co">

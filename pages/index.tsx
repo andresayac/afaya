@@ -3,6 +3,7 @@ import { About } from "../components/about";
 import { Hero } from "../components/hero";
 import { Projects } from "../components/projects";
 import { Contact } from "../components/contact";
+import { Skills } from "../components/skills";
 
 import GitHub from "../public/github.svg";
 import TwitterX from "../public/x.svg";
@@ -35,6 +36,7 @@ export default function Home() {
 					<Hero />
 					<Projects />
 					<About />
+					<Skills />
 					<Contact />
 				</div>
 				<div className="mail"></div>

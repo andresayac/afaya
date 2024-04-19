@@ -1,6 +1,7 @@
 import "../styles/globals.scss";
 import "../components/footer.scss";
 import "../components/about.scss";
+import "../components/skills.scss";
 import "../components/hero.scss";
 import "../components/contact.scss";
 import "../components/projects.scss";
