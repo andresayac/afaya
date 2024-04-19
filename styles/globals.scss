@@ -73,13 +73,14 @@
 		}
 		.links {
 			position: absolute;
-			top: 0;
+			top: 110px;
 			width: 100%;
 			z-index: 2;
 			flex-direction: row;
 			justify-content: center;
 			align-items: flex-end;
 			padding-left: 0;
+			padding-bottom: 202px;
 		}
 	}
 }
