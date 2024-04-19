@@ -25,9 +25,9 @@ export function Skills() {
                         <li>CSS</li>
                         <li>JavaScript</li>
                         <li>React</li>
-                        <li>Next.js</li>
                         <li>Vue.js</li>
-                        <li>ExtJS</li>                        
+                        <li>ExtJS</li>                         
+                        <li>Next.js</li>                       
                         <li>TailwindCSS</li>
                         <li>Bootstrap</li>
                     </ul>
@@ -57,16 +57,17 @@ export function Skills() {
                         <li>GitLab</li>
                         <li>Heroku</li>
                         <li>Netlify</li>
+                        <li>Vercel</li>
                     </ul>
                 </TimelineItem>
                 <TimelineItem date="IA">
-                    <ul>
-                        <li>ChatGPT</li>
-                        <li>OpenAI</li>
+                    <ul>                       
                         <li>TensorFlow</li>
                         <li>PyTorch</li>
                         <li>DialogFlow</li>
-                        <li>Llama3</li>
+                        <li>OpenAI</li>
+                        <li>Huggingface</li>
+                        <li>Llama3</li>                        
                     </ul>
                 </TimelineItem>
             </Timeline>
