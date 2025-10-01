@@ -1,6 +1,9 @@
 import { Timeline, TimelineItem } from "./timeline";
+import { useLanguage } from "../contexts/LanguageContext";
 
 export function Skills() {
+    const { t } = useLanguage();
+    
     return (
         <div id="skills">
             <h2
@@ -15,7 +18,7 @@ export function Skills() {
                     fontSize: "4rem",
                 }}
             >
-                Habilidades
+                {t('skills.title')}
             </h2>
 
             <Timeline>

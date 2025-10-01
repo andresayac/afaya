@@ -100,7 +100,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-	:root {
+	:root:not([data-theme="light"]) {
 		--text: #fff;
 		--text-secondary: #fff;
 		--background: #000;
@@ -108,9 +108,29 @@
 		--background-secondary: #1a1a1a;
 	}
 
-	html {
+	html:not([data-theme="light"]) {
 		color-scheme: dark;
 	}
+}
+
+[data-theme="dark"] {
+	--text: #fff;
+	--text-secondary: #fff;
+	--background: #000;
+	--background-rgb: 13, 13, 13;
+	--background-secondary: #1a1a1a;
+	
+	color-scheme: dark;
+}
+
+[data-theme="light"] {
+	--text: #000;
+	--text-secondary: #000;
+	--background: #fff;
+	--background-rgb: 255, 255, 255;
+	--background-secondary: #f5f5f5;
+	
+	color-scheme: light;
 }
 
 html,

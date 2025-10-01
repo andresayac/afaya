@@ -7,7 +7,15 @@ import "../components/contact.scss";
 import "../components/projects.scss";
 import "../components/timeline.scss";
 import type { AppProps } from "next/app";
+import { LanguageProvider } from "../contexts/LanguageContext";
+import { ThemeProvider } from "../contexts/ThemeContext";
 
 export default function App({ Component, pageProps }: AppProps) {
-	return <Component {...pageProps} />;
+	return (
+		<ThemeProvider>
+			<LanguageProvider>
+				<Component {...pageProps} />
+			</LanguageProvider>
+		</ThemeProvider>
+	);
 }

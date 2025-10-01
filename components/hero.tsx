@@ -1,5 +1,6 @@
 import Avatar from "../public/avatar.png";
 import Image from "next/image";
+import { useLanguage } from "../contexts/LanguageContext";
 
 function RepeatFirstElement(
 	props: React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
@@ -15,17 +16,19 @@ function RepeatFirstElement(
 }
 
 export function Hero(props: React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>) {
+	const { t } = useLanguage();
+	
 	return (
 		<section {...props} className="hero">
 			<div className="navigation">
 				<a className="hover-animation" href="#projects">
-					Proyectos
+					{t('nav.projects')}
 				</a>
 				<a className="hover-animation" href="#about">
-					Acerca de mí
+					{t('nav.about')}
 				</a>	
 				<a className="hover-animation" href="#skills">
-					Habilidades
+					{t('nav.skills')}
 				</a>				
 			</div>
 			<div className="grid">
@@ -38,21 +41,21 @@ export function Hero(props: React.DetailedHTMLProps<React.HTMLAttributes<HTMLDiv
 									backgroundImage: "linear-gradient(90deg, #007CF0, #00DFD8)",
 								}}
 							>
-								Desarrollador
+								{t('hero.developer')}
 							</h2>
 							<h2
 								style={{
 									backgroundImage: "linear-gradient(90deg, #7928CA, #FF0080)",
 								}}
 							>
-								Ingeniero
+								{t('hero.engineer')}
 							</h2>
 							<h2
 								style={{
 									backgroundImage: "linear-gradient(90deg, #FF4D4D, #F9CB28)",
 								}}
 							>
-								Fundador
+								{t('hero.founder')}
 							</h2>
 						</RepeatFirstElement>
 					</div>

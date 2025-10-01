@@ -4,21 +4,21 @@ import { Hero } from "../components/hero";
 import { Projects } from "../components/projects";
 import { Contact } from "../components/contact";
 import { Skills } from "../components/skills";
+import { TopControls } from "../components/TopControls";
 
 import { GitHub, LinkedIn, TwitterX } from "../components/images";
-
-
-export const config = {
-	unstable_runtimeJS: false,
-};
+import { useLanguage } from "../contexts/LanguageContext";
 
 export default function Home() {
+	const { t } = useLanguage();
+	
 	return (
 		<>
 			<Head>
 				<title>Andres Aya</title>
-				<meta name="description" content="Andres Aya - Desarrollador, Ingeniero, Fundador" />
+				<meta name="description" content={t('meta.description')} />
 			</Head>
+			<TopControls />
 			<div className="main">
 				<div className="links">
 					<a href="https://github.com/andresayac/" target="_blank" rel="noreferrer" aria-label="GitHub">

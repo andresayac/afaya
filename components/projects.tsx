@@ -4,6 +4,8 @@ import ChatBotGames from "../public/chatbot_games.png";
 import Notiauto from "../public/notiauto.png";
 import ChatGPTBotWhatsapp from "../public/chatgpt_bot_wa.png";
 import Whatsper from "../public/whatsper.png";
+import EdgeTTS from "../public/edge_tts.png";
+import { useLanguage } from "../contexts/LanguageContext";
 
 export function Card(props: { href?: string; children: ReactNode }) {
 	return (
@@ -15,6 +17,8 @@ export function Card(props: { href?: string; children: ReactNode }) {
 }
 
 export function Projects() {
+	const { t } = useLanguage();
+	
 	return (
 		<section className="projects" id="projects">
 			<h2
@@ -26,7 +30,7 @@ export function Projects() {
 					marginBottom: "4rem",
 				}}
 			>
-				Proyectos
+				{t('projects.title')}
 			</h2>
 
 			<div className="list">
@@ -42,8 +46,9 @@ export function Projects() {
 				<Card href="https://notiauto.co">
 					<Image style={{ aspectRatio: "2 / 1" }} src={Notiauto} alt="NotiAuto" />
 				</Card>
-
-				
+				<Card href="https://github.com/andresayac/edge-tts">
+					<Image style={{ aspectRatio: "2 / 1" }} src={EdgeTTS} alt="EdgeTTS" />
+				</Card>
 			</div>
 		</section>
 	);

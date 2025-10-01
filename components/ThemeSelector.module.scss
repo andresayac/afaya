@@ -1,0 +1,45 @@
+.themeToggle {
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text);
+  padding: 0.6rem;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  width: 44px;
+  height: 44px;
+}
+
+.themeToggle:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+}
+
+.themeToggle svg {
+  width: 20px;
+  height: 20px;
+  color: var(--text);
+  transition: all 0.2s ease;
+}
+
+.themeToggle:hover svg {
+  transform: rotate(10deg);
+}
+
+@media (max-width: 768px) {
+  .themeToggle {
+    padding: 0.5rem;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .themeToggle svg {
+    width: 18px;
+    height: 18px;
+  }
+}
