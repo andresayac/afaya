@@ -1,4 +1,3 @@
-import Avatar from "../public/avatar.png";
 import Image from "next/image";
 import { useLanguage } from "../contexts/LanguageContext";
 
@@ -61,7 +60,7 @@ export function Hero(props: React.DetailedHTMLProps<React.HTMLAttributes<HTMLDiv
 					</div>
 				</div>
 				<div className="avatar">
-					<Image priority width={250} src={Avatar} alt="Andres Aya" />
+					<Image priority width={250} height={250} src="/avatar.png" alt="Andres Aya" />
 				</div>
 			</div>
 			<div></div>
